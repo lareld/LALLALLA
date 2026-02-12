@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>💖 Para JANNE 💖</title>
+
+<style>
+    body {
+        background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+        font-family: Arial, sans-serif;
+        text-align: center;
+        color: #fff;
+        margin-top: 60px;
+    }
+
+    h1 {
+        font-size: 60px;
+        text-shadow: 2px 2px 8px #000;
+    }
+
+    .heart {
+        font-size: 120px;
+        animation: pulse 1.2s infinite;
+    }
+
+    .rose {
+        font-size: 100px;
+        margin-top: 20px;
+        animation: float 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.3); }
+        100% { transform: scale(1); }
+    }
+
+    @keyframes float {
+        0% { transform: translateY(0); }
+        50% { transform: translateY(-15px); }
+        100% { transform: translateY(0); }
+    }
+
+    .message {
+        font-size: 28px;
+        margin-top: 30px;
+    }
+
+    button {
+        margin-top: 40px;
+        padding: 12px 24px;
+        font-size: 20px;
+        background: #fff;
+        color: #ff4f81;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    button:hover {
+        background: #ff4f81;
+        color: #fff;
+    }
+</style>
+
+</head>
+<body>
+
+<h1>💖 JANNE 💖</h1>
+
+<div class="heart">❤️</div>
+
+<div class="rose">🌹</div>
+
+<p class="message">
+Para ti, JANNE 💞<br>
+Eres mi sonrisa favorita ✨<br>
+Mi alegría diaria 🌹<br>
+Y mi mejor regalo de la vida 💕
+</p>
+
+<button onclick="showGift()">🎁 Ver sorpresa</button>
+
+<script>
+    function showGift() {
+        alert("🌹 JANNE... mi mejor decisión eres tú ❤️");
+    }
+</script>
+
+</body>
+</html>
