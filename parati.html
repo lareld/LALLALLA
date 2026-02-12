@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para ti ❤️</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      font-family: Arial, sans-serif;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      height:100vh;
+      padding:20px;
+    }
+
+    .card{
+      background:white;
+      width:100%;
+      max-width:350px;
+      padding:25px;
+      border-radius:20px;
+      text-align:center;
+      box-shadow:0 10px 25px rgba(0,0,0,0.2);
+      position:relative;
+    }
+
+    h1{
+      font-size:20px;
+      margin-bottom:20px;
+      color:#ff3366;
+    }
+
+    button{
+      width:100%;
+      padding:12px;
+      margin:10px 0;
+      font-size:16px;
+      border:none;
+      border-radius:10px;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    .si{
+      background:#ff3366;
+      color:white;
+    }
+
+    .no{
+      background:#ccc;
+      position:relative;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <h1>💘 ¿Quieres ser mi San Valentín? 💘</h1>
+
+    <button class="si" onclick="alert('💖 Sabía que dirías que sí 💖')">
+      Sí 💕
+    </button>
+
+    <button class="no" id="noBtn">
+      No 🙈
+    </button>
+  </div>
+
+  <script>
+    const noBtn = document.getElementById("noBtn");
+
+    noBtn.addEventListener("touchstart", mover);
+    noBtn.addEventListener("mouseover", mover);
+
+    function mover(){
+      noBtn.style.position = "absolute";
+      noBtn.style.left = Math.random() * 200 + "px";
+      noBtn.style.top = Math.random() * 200 + "px";
+    }
+  </script>
+
+</body>
+</html>
